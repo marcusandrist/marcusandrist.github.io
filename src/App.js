@@ -27,14 +27,12 @@ function App() {
       <main>
 
       <article>
-        <h2>Professional Experience</h2>
+        <h2>Professional Goals</h2>
 
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Donec a diam
-          lectus. Set sit amet ipsum mauris. Maecenas congue ligula as quam
-          viverra nec consectetur ant hendrerit. Donec et mollis dolor. Praesent
-          et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt
-          congue enim, ut porta lorem lacinia consectetur.
+          I am currently an undergraduate senior studying computer science 
+          searching for employment in a software engineering role, preferably
+          full stack or front-end development.
         </p>
 
         <h3>Subsection</h3>

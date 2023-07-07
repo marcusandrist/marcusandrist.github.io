@@ -25,7 +25,8 @@
 .Videos {
   position: absolute;
   top: 50%;
-  width: 90%;
+  min-width: 20%;
+  max-width: 90%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -68,6 +69,11 @@
   flex-direction: row;
   align-items: normal;
   justify-content: center;
+}
+
+.App article p {
+  margin-left: 15vh;
+  margin-right: 10vh;
 }
 
 .App-link {
