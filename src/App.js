@@ -19,9 +19,9 @@ function App() {
         </div>
         <nav className="Touch">
           <ul>
-            <li><a href="https://github.com/marcusandrist" target="_blank">Github</a></li>
             <li><a href="#credentials">Contact</a></li>
             <li><a href={pdfFile} target="_blank" >View Resume (PDF)</a></li>
+            <li><a href="https://github.com/marcusandrist" target="_blank">Github</a></li>
           </ul>
         </nav>
 
@@ -82,10 +82,11 @@ function App() {
         </p>
       </article>
     </main>
-
+    <br></br>
     <footer>
       <p>Marcus Andrist Personal Site-Created using React</p>
     </footer>
+    <br></br>
     <br></br>
   </body>
     </div>

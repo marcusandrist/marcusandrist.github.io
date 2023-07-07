@@ -42,31 +42,37 @@ li a:link, li a:visited {
       display: none;
   }
 }
+.Touch {
+  justify-content: center;
+}
 
 .Touch ul {
-  width: 100%;
+  width: 80%;
   display: flex;
   flex-direction: row;
   justify-content: center; /* or space-between, depending on your design */
-  padding: 0; /* remove default padding */
+  padding: 0px; /* remove default padding */
+  padding-right: 0px;
   list-style: none; 
   background: #8b7b96;
   margin-right: 0px;
+  box-sizing: border-box;
 }
 
 .Touch li a {
   text-decoration: none;
   font-size: calc(12px + 2vmin);
-  margin-right: 0px;
 }
 
 .Touch li {
-  box-sizing: border-box;
   padding: 10px;
   border: 3px solid #000;
   background: #fff;
   background-clip: padding-box;
-  margin-right: 0px;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .Touch {
