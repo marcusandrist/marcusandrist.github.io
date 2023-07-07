@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import videoFile from "./test-vid.mp4";
+import pdfFile from "./Andrist Resume.pdf"
 import ReactPlayer from "react-player";
 import './App.css';
 
@@ -18,9 +19,9 @@ function App() {
         </div>
         <nav className="Touch">
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Resume Copy (PDF)</a></li>
+            <li><a href="https://github.com/marcusandrist" target="_blank">Github</a></li>
+            <li><a href="#credentials">Contact</a></li>
+            <li><a href={pdfFile} target="_blank" >View Resume (PDF)</a></li>
           </ul>
         </nav>
 
@@ -30,46 +31,62 @@ function App() {
         <h2>Professional Goals</h2>
 
         <p>
-          I am currently an undergraduate senior studying computer science 
-          searching for employment in a software engineering role, preferably
-          full stack or front-end development.
+          Senior undergraduate student of computer science searching for a
+          entry-level position or internship in the field of software engineering, 
+          front-end development, and/or database management. Looking to further my
+          my technical experience, explore job opportunities, and find 
+          long-term employment with team-led software development companies.
         </p>
 
-        <h3>Subsection</h3>
+        <h2>About me</h2>
 
         <p>
-          Donec ut librero sed accu vehicula ultricies a non tortor. Lorem ipsum
-          dolor sit amet, consectetur adipisicing elit. Aenean ut gravida lorem.
-          Ut turpis felis, pulvinar a semper sed, adipiscing id dolor.
+          Full-Time Work Availability: Present-
         </p>
-
         <p>
-          Pelientesque auctor nisi id magna consequat sagittis. Curabitur
-          dapibus, enim sit amet elit pharetra tincidunt feugiat nist imperdiet.
-          Ut convallis libero in urna ultrices accumsan. Donec sed odio eros.
-        </p>
-
-        <h3>Another subsection</h3>
-
-        <p>
-          Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum
-          soclis natoque penatibus et manis dis parturient montes, nascetur
-          ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem
-          facilisis semper ac in est.
+          Part-Time Work Availability (&lt;30hrs) (Academic Semester): September 11th-December 15th
         </p>
 
         <p>
-          Vivamus fermentum semper porta. Nunc diam velit, adipscing ut
-          tristique vitae sagittis vel odio. Maecenas convallis ullamcorper
-          ultricied. Curabitur ornare, ligula semper consectetur sagittis, nisi
-          diam iaculis velit, is fringille sem nunc vet mi.
+          I am an active college student with years of experience in the realm of technical
+          industries. From elementary small game development to web development to projects in the realm of
+          distributable .NET and python applications I have always been into computers, programming, and
+          applications. Whether it was interactions and UX or streamline menu development, I've always
+          enjoyed using and analyzing programs. Methodology and functionality are huge components
+          to my everyday life and my approach to substantial, ethical, impactful programming. I am
+          looking for a shot to bring my everyday curiosity and passion to a business setting or
+          job opportunity today.
+        </p>
+
+        <p>
+          An agile approach and team collaboration have been things I've strived for in project
+          work over my three years as an active developer. I bring a topical focus and conversational spark to 
+          any environment that hopes to cultivate experiences that can be used in our joined approach to 
+          developmental tasks. I really enjoy flexibility and a commitment to communication. Staying in the 
+          loop and also remembering to update my peers are large focuses of mine. My style is consistent and
+          laid-back, but never shy to get into a heated-debate about childhood mmorpgs.
+        </p>
+
+        <p>
+
+        </p>
+
+        <h2 id="credentials">Contact Info</h2>
+
+        <p>
+        Email: marcusandrist@drake.edu
+        </p>
+
+        <p>
+          Located in Des Moines, IA
         </p>
       </article>
     </main>
 
     <footer>
-      <p>Created using React</p>
+      <p>Marcus Andrist Personal Site-Created using React</p>
     </footer>
+    <br></br>
   </body>
     </div>
   );
