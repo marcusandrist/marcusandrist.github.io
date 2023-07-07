@@ -32,6 +32,12 @@
   align-items: center;
 }
 
+@media screen and (max-width: 1439px) { /* or any width that you think isn't enough */
+  .Videos{
+      display: none;
+  }
+}
+
 .Touch ul {
   width: 100%;
   display: flex;
