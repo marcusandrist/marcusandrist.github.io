@@ -18,10 +18,25 @@ li a:link, li a:visited {
   color: #8b7b96;
 }
 
+#schedule {
+  font-size: 18px;
+  margin-top: 1px;
+  padding-top: 1px;
+}
+
+#myname {
+  color: white;
+  margin-top: 13px;
+}
+
+h1 {
+  font-size: 56px;
+  }
+
 .Top {
   position: relative;
   margin-top: 15px;
-  height: 16vh;
+  height: 22vh;
   display: flex;
   flex-direction:column;
   align-items: center;
@@ -61,6 +76,7 @@ li a:link, li a:visited {
 
 .Touch li a {
   text-decoration: none;
+  color: black;
   font-size: calc(12px + 2vmin);
 }
 
@@ -86,7 +102,7 @@ li a:link, li a:visited {
   min-height: 1vh;
   margin-right: 0px;
   display: flex;
-  padding-inline: 35px;
+  padding-inline: 6vh;
   flex-direction: row;
   align-items: normal;
   justify-content: center;
