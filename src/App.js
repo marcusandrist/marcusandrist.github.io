@@ -50,7 +50,7 @@ function App() {
 
 	<h2 id="credentials">Contact Info</h2>
         <p>
-        Email: marcusandrist@drake.edu
+        Email: marcus.andrist@drake.edu
         </p>
 
         <p>
