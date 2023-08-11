@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/static/css/main.c396a608.css",
-    "main.js": "/static/js/main.c96137e2.js",
+    "main.js": "/static/js/main.21f6b1b6.js",
     "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
     "static/media/Andrist-Marcus-Resume.pdf": "/static/media/Andrist-Marcus-Resume.3c9957aad8139b9b0085.pdf",
     "static/media/test-vid.mp4": "/static/media/test-vid.4d5be1bc7effcd9bbe8a.mp4",
     "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/index.html",
     "main.c396a608.css.map": "/static/css/main.c396a608.css.map",
-    "main.c96137e2.js.map": "/static/js/main.c96137e2.js.map",
+    "main.21f6b1b6.js.map": "/static/js/main.21f6b1b6.js.map",
     "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c396a608.css",
-    "static/js/main.c96137e2.js"
+    "static/js/main.21f6b1b6.js"
   ]
 }
