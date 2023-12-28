@@ -86,6 +86,16 @@ a:hover {
     margin: inherit;
 }
 
+@media screen and (max-width: 600px) {
+  .kewl {
+    max-width: 600px;
+    justify-content: center;
+    display: flex;
+    margin: inherit;
+
+  }
+}
+
 #videoo
 {
     order: 2;
