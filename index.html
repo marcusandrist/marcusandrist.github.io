@@ -3,55 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio- Marcus A.</title>
+    <title>Marcus' Site</title>
     <!-- Only critical scripts and styles --!>
     <link rel="stylesheet" href="index.css" id="style-link">
     <link rel="icon" href="favicon.ico"/>
 </head>
 <body>
-    <!-- Sections-div layout --!>
-    <section>
-        <img src="marcus_headshot.jpg" alt="A photo of Marcus A.">
-        <h1>Marcus Andrist</h1>
-        <p>
-            I am Marcus Andrist, a dedicated software developer and engineer with a keen interest in <strong>devops</strong>, <strong>back-end server development</strong>, and <strong>full-stack communication</strong>. Proficient in the intricate languages of the internet, I possess the capability to improve and analyze complex systems. While my expertise is suggestively technical, I maintain an approach that serves to display information to a wide variety of audiences.
-        </p>
-    </section>
-    <section>
-        <h2>Experience</h2>
-        <h3>Software Developer</h3>
-        <p>Baker Tech Services</p>
-        <p>May 2023 -July 2023</p>
-        <ul>
-            <li>Fast-paced small business environment where communication was hard as a result. I was expected to complete complex tasks and was given reign on design decisions and implementation.</li>  
-            <li>Demonstrated proficiency in python (programming language), software development, and distributable application packaging.</li>
-            <li>Generated documentation on best-use and anti-patterns for ConnectWise Public Services Automation software.</li>
-        </ul>
-    </section>
-    <section>
-        <h3>Lead UI/UX Designer</h3>
-        <p>WooFactor Music (School Internship)</p>
-        <p>Jan 2022 -May 2022</p>
-        <ul>
-            <li>Received invaluable experience in project handover, professional code review, and agile practices.</li>
-            <li>Had the valuable opportunity to collaborate with a diverse team, including a first-generation immigrant whose secondary language was English and a team member who was deaf.</li>
-            <li>Prepared and succesfully executed on a development plan involving research, documentation, testing, handover (on both ends of the project), and acceptance criteria.</li>
-        </ul>
-    </section>
-    <section>
-        <h2>Personal Achievements</h2>
-        <ul>
-            <li>Wrote a finance data web crawler in C# using the selenium library.</li>
-            <li>Instantiated a MongoDB non-relational database for storing my own json libraries.</li>
-            <li>I am currently an AWS organizer for a small project and have knowledge in IAM identity center, amazon ec2, and amazon lambda functions (serverless compute).</li>
-            <li>Celebrating 13 years on the web!</li>
-    </section>
+<!-- Sections-div layout --!>
+	<section> <img src="marcus_headshot.jpg" alt="A photo of Marcus A.">
+	<h1>Marcus Andrist</h1> <p id="bio"> I am Marcus Andrist, a dedicated software
+	developer and engineer with a keen interest in <strong>full-stack
+	development</strong>, <strong>devops</strong>, and
+	<strong>technological communication</strong>. Proficient in the
+	intricate languages of computers, I possess the capability to improve
+	and analyze complex systems. While my expertise is suggestively
+	technical, I maintain an inclusive approach that looks to collaborate
+	effectively with non-technical audiences too!  </p> </section>
+	<section> <h2>My Development Experiences</h2> <h3>Front-End App Dev</h3>
+	<p>PyQT, Tkinter, Custom API Wrapper, Authentication Portal, Admin-User
+	Architecture, Distributable .exe, AGILE Development w/Kanban, LucidChart +
+	Figma, GUI Application, LTS, Mission-Critical Software</p> <h3>Lead UI/UX
+	Designer</h3> <p>Adaptive Communication, Professional Code-Review, UX Interviews, AGILE Sprints, Command-Line Application Development, Non-Uniform Data Representation, Machine Learning, Markov Chains, Internship </p> <h3>API Developer</h3> <p>Agile at Scale, Flask, End-to-End Testing, CI/CD Pipelines, User Stories, GitLab, SQLite3, JavaScript Object Notation (JSON), Servicing React Front-End, Endpoint Design, Routing, Class Project </p> </section>
+        <section> 
+	<video id="loop" width="300" height="500" muted autoplay>
+	<source src="IMG_3057.mp4" type="video/mp4">
+	Your browser does not support the content type.
+	</video>
+	<script>
+		const video = document.getElementById("loop");
+		video.addEventListener("ended", () => {
+				video.currentTime = 0;
+				video.play();});
+		video.remoteAttribute("controls");
+		video.play();
+	</script>
+	<h2 id="dunks">Personal Achievements</h2> <ul
+	id="dunks">
+	<li>Wrote a finance data web crawler in C# using the selenium
+	library.</li> <li>I am currently an AWS organizer for a small
+	project and have knowledge in IAM identity center, amazon
+	ec2, and amazon lambda functions (serverless compute).</li>
+	<li>Can script in Bash (Most Proud).</li> <li>I can dunk
+	basketballs.</li>
+
+	</section>
     <section>
         <h2>Education</h2>
-        <h3>B.S. in Computer Science</h3>
-        <p>Drake University (GPA: 3.5)</p>
-        <p>Expected Graduation: May 2024</p>
-        <p>Relevant Coursework: Software Engineering, Programming Languages, Computer Architecture(mips, assembly), Discrete Mathematics, Databases</p>
+	<h3>Owatonna Senior High School (2020)</h3>
+	<h3>Bachelor of Science in Computer Science Candidate, Drake University</h3>
     </section>
     <section>
         <h2>Soft Skills</h2>
@@ -59,7 +58,7 @@
     </section>
     <section id="contact">
         <h2>Contact</h2>
-        <p>To reach me, please send me a message on <a href="https://www.linkedin.com/in/marcusandrist/">LinkedIn.</a></p>
+	<p>To reach me, please send me a message on <a href="https://www.linkedin.com/in/marcusandrist/">LinkedIn.</a> or email me at <a href="mailto:marcusapply@yahoo.com">marcusapply@yahoo.com</a></p>
     </section>
     <div class="footer">
     This site is powerd by GH Pages
