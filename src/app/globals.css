@@ -11,3 +11,18 @@
   }
 }
 
+body {
+  background-image: url('/spectest.png');
+  background-repeat: repeat;
+  background-size: auto;
+  opacity: 0.95; /* Adjust opacity if needed */
+  min-height: 100vh; /* Ensures at least full viewport height */
+  margin: 0; /* Remove any default margin */
+}
+
+html {
+  height: 100%; /* Ensure html expands with the body */
+  overflow-y: scroll; /* Ensure scrollbar appears when content overflows */
+  overflow-x: hidden;
+}
+
