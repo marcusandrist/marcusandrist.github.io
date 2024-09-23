@@ -30,20 +30,34 @@ const config: Config = {
       xl: '1440px',
     },
     extend: {
+      fontFamily: {
+        slab: ['var(--font-roboto-slab)'],
+        mono: ['var(--font-roboto-mono)'],
+      },
       animation: {
         blob: "blob 7s infinite",
         blobber: "blobber 1s infinite",
         orbit: "orbit 14s infinite linear",
         dabar: "dabar 15s infinite linear",
+        dabar2: "dabar2 11s infinite linear",
       },
         keyframes: {
+          dabar2: {
+            "0%" : {transform: "translate(80vw, 0vh)"},
+            "10.5%" : {transform: "translate(35vw, 0vh)"},
+            "22%" : {transform: "translate(11vw, 0vh)"},
+            "29%" : {transform: "translate(-1vw, 0vh)"},
+            "39.5%" : {transform: "translate(-46vw, 0vh)"},
+            "50%" : {transform: "translate(-66vw, 0vh)"},
+            "100%" : {transform: "translate(-66vw, 0vh)"},
+          },
           dabar: {
             "0%" : {transform: "translate(90vw, 0vh)"},
             "7%" : {transform: "translate(45vw, 0vh)"},
             "48%" : {transform: "translate(0vw, 0vh)"},
             "55%" : {transform: "translate(-35vw, 0vh)"},
             "80%" : {transform: "translate(-60vw, 0vh)"},
-            "100%" : {transform: "translate(-60vw, 0vh)"},
+            "100%" : {transform: "translate(-80vw, 0vh)"},
           },
           blob: {
             "0%": {

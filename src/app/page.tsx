@@ -1,16 +1,16 @@
-import Orbiter from "../components/Orbiter";
-import { Information, Header, ScrollingBar } from "../components/Information";
+import { Header } from "../components/Header";
+import { Blog } from "../components/Blog";
+import { Earth } from "../components/display/Earth";
 
 export default function Home() {
 return (
 <div>
-  
+
   <Header />
 
-  <Information />
+  <Blog />
 
-  {/* Orbiting earth png */}
-  <Orbiter image_path="/earth.png" mobile_image_path="/earth.png"/>
+  <Earth />
 
 </div>
 );
