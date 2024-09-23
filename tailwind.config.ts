@@ -37,8 +37,14 @@ const config: Config = {
       animation: {
         orbit: "orbit 14s infinite linear",
         dabar: "dabarf 11s infinite linear",
+        dabarV2: "dabarf 11s linear",
+        welcome: "welcome 4s linear",
       },
         keyframes: {
+          welcome: {
+            "0%" : {transform: "translate(45vw, 0vh) scale(.1)"},
+            "100%" : {transform: "translate(0vw, 0vh) scale(1)"},
+          },
           dabarf: {
             "0%" : {transform: "translate(80vw, 0vh)"},
             "10%" : {transform: "translate(20vw, 0vh)"},
