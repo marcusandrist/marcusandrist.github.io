@@ -5,7 +5,7 @@ import { Earth } from "./display/Earth";
 export const Header = () => {
 return (
   <div className=
-    {["absolute","z-10","mx-[10vw]","w-[80vw]","h-[50vh]","border-x-4",
+    {["absolute","z-10","mx-[10vw]","md:w-[80vw]","h-[50vh]","border-x-4",
     "bg-lighterpalecreme","bg-opacity-90","border-opacity-70","border-black",
     "flex-1","mt-[1vh]"].join(" ")}
   >

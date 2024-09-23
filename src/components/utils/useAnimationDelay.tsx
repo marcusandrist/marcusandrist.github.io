@@ -27,7 +27,7 @@ export const useAnimationDelay =
       // set delay for animation
       setTimeout(() => {
         // assume hidden is added via method stub
-        elementToDelay.classList.remove("hidden");
+        //elementToDelay.classList.remove("hidden");
         elementToDelay.classList.add(...styles);
       }, delay);
 
