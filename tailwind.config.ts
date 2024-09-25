@@ -9,8 +9,11 @@ const config: Config = {
   ],
   theme: {
     colors: {
+      'darkpurple': '#170B1E',
+      'silver': '#DBD3D2',
       'lighterpalecreme':'#FFCFC6',
       'palecreme': '#E4C9BA',
+      'bluegray': '#3A4A4C',
       'blue': '#1fb6ff',
       'black': '#000000',
       'purple': '#7e5bef',
@@ -22,6 +25,7 @@ const config: Config = {
       'gray': '#8492a6',
       'gray-light': '#d3dce6',
       'white': '#FFFFFF',
+      'cyan': '#5BC0FF',
     },
     screens: {
       sm: '480px',
@@ -33,6 +37,8 @@ const config: Config = {
       fontFamily: {
         slab: ['var(--font-roboto-slab)'],
         mono: ['var(--font-roboto-mono)'],
+        daddytime: ['var(--font-daddytime)'],
+        jaro : ['var(--font-jaro)'],
       },
       animation: {
         orbit: "orbit 14s infinite linear",

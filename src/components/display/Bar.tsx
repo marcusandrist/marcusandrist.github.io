@@ -14,8 +14,8 @@ export const ScrollingBar = () => {
 
   <div className={["relative","bg-black","border-white","border-y-2","select-none",
   "border-opacity-50","text-white","px-[1vw]","pt-[.5vh]","overflow-hidden",
-  "whitespace-nowrap","md:h-[5vh]","md:text-[3vh]","font-slab","w-full",
-  "text-[2vw]","h-[3vh]"].join(" ")}>
+  "whitespace-nowrap","h-[5vh]","text-[3vh]","font-slab","w-full",
+  ].join(" ")}>
     <p id="initWelcomeText" className={["animate-dabarV2","md:ml-[0vw]",
     "ml-[-10vw]"].join(" ")}>
       Welcome! My name's Marcus and I love software engineering. Woooooooooo
@@ -27,6 +27,7 @@ export const ScrollingBar = () => {
 
   );
 }
+
 export const TypingBar = ({ text }: { text:string[] }) => {
 
   let currentMessage;
@@ -34,9 +35,7 @@ export const TypingBar = ({ text }: { text:string[] }) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const cursorRef = useRef<HTMLDivElement>(null);
   const [typingText, setTypingText] = useState<string>(text[0]);
-
-  useTypingAnimation({text:typingText, typingVelocity:200, textRef:containerRef,
-  cursorRef:cursorRef});
+  const [isActive, setIsActive] = useState<boolean>(true);
 
   function switchMessage() {
     let newMessage;
@@ -46,27 +45,49 @@ export const TypingBar = ({ text }: { text:string[] }) => {
     return currentMessage;
   }
 
-  
+  function handleVisChange() {
+    if (document.hidden) {
+      setIsActive(false);
+    } else {
+      setIsActive(true);
+    }
+  }
+
   useEffect(() => {
+    document.addEventListener('visibilitychange', handleVisChange);
+    return () => {
+      document.removeEventListener('visibilitychange', handleVisChange);
+    }
+  }, []);
+
+  useEffect(() => {
+    
     const intervalId = setInterval(() => {
     const newMessage = switchMessage();
     setTypingText(text[newMessage]);
-    }, 8000);
+    }, 13000);
 
     return () => clearInterval(intervalId);
+
   }, []);
+
+  // typing begins to break at a delay < 15
+  useTypingAnimation({text:typingText, typingDelay:69, textRef:containerRef,
+  cursorRef:cursorRef});
 
   return (
 
   <div className={["bg-black","pt-[.5vh]","h-[4vh]","w-[60vw]","ml-[2vw]",
   "pl-[1vw]","select-none","text-2xl"].join(" ")}>
-    <div className={["bg-black","text-green","inline-block",
-    ""].join(" ")} ref={containerRef}>
-    </div>
-    <div ref={cursorRef} className={["inline-block","text-green",
-    "bg-opacity-0"].join(" ")}>
-    █
-    </div>
+    {isActive && <div>
+      <div className={["bg-opacity-0","text-green","inline-block",
+      ""].join(" ")} ref={containerRef}>
+      </div>
+      <div ref={cursorRef} className={["inline-block","text-green",
+      "bg-opacity-0"].join(" ")}>
+      █
+      </div>
+    </div>}
   </div>
 
   );

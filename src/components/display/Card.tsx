@@ -1,5 +1,6 @@
 export const Socials = ({className}: {className: string}) => {
-return (
+  
+  return (
 
   <div className={["relative","flex","md:flex-row","md:my-[1vw]","flex-col",
   "ml-[5vw]","md:ml-[1.5vw]"].join(" ")}>
@@ -20,11 +21,24 @@ return (
     </a>
   </div>
 
-)
+  )
 }
-/*
-  <div className={["absolute","w-[16vw]","md:top-[5.5vh]","md:h-[3vw]",
-  "md:left-[64vw]","flex","justify-center","space-between","items-center",
-  "mt-[.15vh]","flex-col","md:flex-row","top-[6.5vh]","h-[16vw]",
-  "left-[62vw]",].join(" ")}>
-*/
+
+export const About = () => {
+
+  return (
+
+  <div className="mx-[3vw] bg-cyan flex bg-opacity-5 h-[15vh] my-[6vh] relative
+  rounded-md flex flex-row">
+    <div className="flex flex-col">
+    <h1 className="flex mx-[1vw] text-3xl font-jaro">
+      What do I like to do? 
+    </h1>
+    <p className="font-daddytime">
+      Have fun!
+    </p>
+    </div>
+  </div>
+
+  );
+}

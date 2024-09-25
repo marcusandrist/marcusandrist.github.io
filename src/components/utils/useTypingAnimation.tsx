@@ -2,14 +2,14 @@ import { useEffect, useRef } from "react";
 
 interface TypingAnimationProps {
   text: string;
-  typingVelociy: number;
+  typingDelay: number;
   textRef: React.RefObject<HTMLParagraphElement>;
   cursorRef: React.RefObject<HTMLParagraphElement>;
 }
 
 export default function useTypingAnimation(
 { text, 
-  typingVelocity, 
+  typingDelay, 
   textRef, 
   cursorRef }: TypingAnimationProps) {
   
@@ -27,7 +27,7 @@ export default function useTypingAnimation(
         prevElapsed = -1;
       }
 
-      const elapsed = Math.floor((timestamp - start) / typingVelocity);
+      const elapsed = Math.floor((timestamp - start) / typingDelay);
 
       if (elapsed < text.length && elapsed !== prevElapsed) 
       {
@@ -39,8 +39,8 @@ export default function useTypingAnimation(
       requestAnimationFrame(step);
     } requestAnimationFrame(step);
 
+
     return () => {
-      if (content.innerHTML.length !== text.length) return;
       content.innerHTML = "";
       cursor.innerHTML = "█";
     };
