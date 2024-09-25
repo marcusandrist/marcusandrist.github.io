@@ -72,7 +72,7 @@ export const TypingBar = ({ text }: { text:string[] }) => {
   }, []);
 
   // typing begins to break at a delay < 15
-  useTypingAnimation({text:typingText, typingDelay:69, textRef:containerRef,
+  useTypingAnimation({text:typingText, typingDelay:55, textRef:containerRef,
   cursorRef:cursorRef});
 
   return (

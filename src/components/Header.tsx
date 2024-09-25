@@ -2,10 +2,14 @@ import { TypingBar, ScrollingBar } from "./display/Bar";
 import { Carousel } from "./display/Carousel";
 import { Socials } from "./display/Card";
 import { Earth } from "./display/Earth";
-import messages from "../app/messages.json";
+// Look into why json won't import from relative public path?
+import messages from "../../public/messages.json";
 import { About } from "./display/Card";
 
 export const Header = () => {
+
+  const jsonParams = { file: messages, objName: "messages"};
+
   return (
 
   <div className=
@@ -20,7 +24,7 @@ export const Header = () => {
     {/* Socials and TypingBar elements and About */}
     <div className="flex flex-row items-center mt-[2vh] bg-bluegray mx-[3vw]
     border-2 border-darkpurple">
-      <TypingBar text={ ParseMessages(messages) } />
+      <TypingBar text={ messages["messages"] } />
       <Socials />
     </div>
 
@@ -31,10 +35,4 @@ export const Header = () => {
   </div>
 
   );
-}
-
-function ParseMessages(messages) {
-  const jsonString = JSON.stringify(messages);
-  const jsonObj = JSON.parse(jsonString);
-  return jsonObj.messages;
 }

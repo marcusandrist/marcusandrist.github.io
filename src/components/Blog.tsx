@@ -7,7 +7,10 @@ return (
     "border-b-4","border-x-4","bg-lighterpalecreme","opacity-90",
     "border-opacity-70","border-black"].join(" ")}
   >
-    <Carousel />
+    {/* Carousel wrapper for expanding width */}
+    <div className="mx-[2vw]">
+      <Carousel />
+    </div>
     
   </div>
 );
