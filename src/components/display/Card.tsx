@@ -32,6 +32,14 @@ export const Socials = ({className}: {className: string}) => {
   )
 }
 
+/*
+    Mobile-styling ideas, make this a grid that goes from 1x5
+    to 2x(2+3). Just keep a relatively clean standard that scales.
+    We all know that the socials bar and banner will be more
+    difficult, along with the carousel possibly. This should be
+    the freeest cheese of the bunch.
+*/
+
 export const About = () => {
 
   return (

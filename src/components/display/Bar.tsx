@@ -78,7 +78,7 @@ export const TypingBar = ({ text }: { text:string[] }) => {
   return (
 
   <div className={["bg-black","pt-[.5vh]","h-[4vh]","w-[60vw]","ml-[2vw]",
-  "pl-[1vw]","select-none","text-2xl"].join(" ")}>
+  "pl-[1vw]","select-none","text-2xl","overflow-hidden"].join(" ")}>
     {isActive && <div>
       <div className={["bg-opacity-0","text-green","inline-block",
       ""].join(" ")} ref={containerRef}>
