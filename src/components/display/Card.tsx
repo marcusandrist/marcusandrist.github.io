@@ -1,4 +1,5 @@
-import questionAnswers from "../../../public/question_answer.json";
+//import questionAnswers from "../../../public/data/question_answer.json";
+import questionAnswers from "../../data/question_answer.json";
 
 interface QACardProps {
   question:string;
@@ -14,17 +15,17 @@ export const Socials = ({className}: {className: string}) => {
   "ml-[5vw]","md:ml-[1.5vw]"].join(" ")}>
 
     <a href="https://www.linkedin.com/in/marcusandrist/" target="_blank">
-    <div className={["bg-[url('/linkedin2.png')]","w-[4vh]","h-[4vh]","rounded-md",
+    <div className={["bg-[url('/images/linkedin2.png')]","w-[4vh]","h-[4vh]","rounded-md",
     "bg-contain","bg-no-repeat","mx-[1.33vw]"].join(" ")} />
     </a>
 
     <a  href="https://github.com/marcusandrist" target="_blank">
-    <div className={["bg-[url('/github3.png')]","w-[4vh]","h-[4vh]","rounded-md",
+    <div className={["bg-[url('/images/github3.png')]","w-[4vh]","h-[4vh]","rounded-md",
     "bg-contain","bg-no-repeat","mx-[1.33vw]"].join(" ")} />
     </a>
 
     <a href="https://dough-flow.com/" target="_blank">
-    <div className={["bg-[url('/icon1.png')]","w-[4vh]","h-[4vh]",
+    <div className={["bg-[url('/images/icon1.png')]","w-[4vh]","h-[4vh]",
     "bg-contain","bg-no-repeat","mx-[1.33vw]"].join(" ")} />
     </a>
   </div>

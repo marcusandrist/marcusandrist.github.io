@@ -3,7 +3,7 @@ import { Carousel } from "./display/Carousel";
 import { Socials } from "./display/Card";
 import { Earth } from "./display/Earth";
 // Look into why json won't import from relative public path?
-import messages from "../../public/messages.json";
+import messages from "../data/messages.json";
 import { About } from "./display/Card";
 
 export const Header = () => {

@@ -30,7 +30,7 @@ export const ScrollingBar = () => {
 
 export const TypingBar = ({ text }: { text:string[] }) => {
 
-  let currentMessage;
+  let messageIndex: number;
 
   const containerRef = useRef<HTMLDivElement>(null);
   const cursorRef = useRef<HTMLDivElement>(null);
@@ -38,11 +38,11 @@ export const TypingBar = ({ text }: { text:string[] }) => {
   const [isActive, setIsActive] = useState<boolean>(true);
 
   function switchMessage() {
-    let newMessage;
-    do { newMessage = (Math.random() * (text.length-.5)|0); } 
-    while (newMessage === currentMessage);
-    currentMessage = newMessage;
-    return currentMessage;
+    let newMessageIndex: number;
+    do { newMessageIndex = (Math.random() * (text.length-.5)|0); } 
+    while (newMessageIndex === messageIndex);
+    messageIndex = newMessageIndex;
+    return messageIndex;
   }
 
   function handleVisChange() {
@@ -65,14 +65,14 @@ export const TypingBar = ({ text }: { text:string[] }) => {
     const intervalId = setInterval(() => {
     const newMessage = switchMessage();
     setTypingText(text[newMessage]);
-    }, 13000);
+    }, 6000);
 
     return () => clearInterval(intervalId);
 
   }, []);
 
-  // typing begins to break at a delay < 15
-  useTypingAnimation({text:typingText, typingDelay:55, textRef:containerRef,
+  // typing begins to break at a delay < 15 // 55 is kinda chill
+  useTypingAnimation({text:typingText, typingDelay:15, textRef:containerRef,
   cursorRef:cursorRef});
 
   return (
