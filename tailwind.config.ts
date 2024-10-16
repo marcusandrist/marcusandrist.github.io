@@ -9,6 +9,8 @@ const config: Config = {
   ],
   theme: {
     colors: {
+      'orangotan': '#FF8551',
+      'lighttan': '#F2B8A2',
       'darkpurple': '#170B1E',
       'silver': '#DBD3D2',
       'lighterpalecreme':'#FFCFC6',
@@ -31,6 +33,7 @@ const config: Config = {
       sm: '480px',
       md: '768px',
       lg: '976px',
+      mn: '1024px',
       xl: '1440px',
     },
     extend: {
